@@ -10,6 +10,7 @@ Build Linux LV2 plugins with Docker/Podman.
 - `chowmatrix` — [Chowdhury-DSP/ChowMatrix](https://github.com/Chowdhury-DSP/ChowMatrix)
 - `chowmultitool` — [Chowdhury-DSP/ChowMultiTool](https://github.com/Chowdhury-DSP/ChowMultiTool)
 - `fabla` — [openAVproductions/openAV-Fabla](https://github.com/openAVproductions/openAV-Fabla)
+- `sorcer` — [openAVproductions/openAV-Sorcer](https://github.com/openAVproductions/openAV-Sorcer)
 
 ```sh
 make all          # build everything (if you want to build all of these)
@@ -20,6 +21,7 @@ make chowkick      # build chowkick
 make chowmatrix    # build chowmatrix
 make chowmultitool # build chowmultitool
 make fabla         # build fabla
+make sorcer        # build sorcer
 
 make clean        # clear out/
 ```
