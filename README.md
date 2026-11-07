@@ -1,4 +1,4 @@
-# linux-lv2-buildscripts
+# lv2plugin-buildscripts
 
 Build Linux LV2 plugins with Docker/Podman.
 
