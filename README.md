@@ -1,17 +1,18 @@
-# helm-linux-vst-builder
+# linux-lv2-buildscripts
 
-Build Linux Helm software synthsizer VST2 library in Docker/Podman.
-(Notice: Helm is now officaly **DEPRECATED**, and **RECOMMEND TO USE VITAL.** and I'm **NOT OF AUTHOR OF HELM.**)
+Build Linux LV2 plugins with Docker/Podman.
 
-## Dependency
+- `helm` — [mtytel/helm](https://github.com/mtytel/helm) 
+- `gearmulator` — [dsp56300/gearmulator](https://github.com/dsp56300/gearmulator) 
+- `chowkick` — [Chowdhury-DSP/ChowKick](https://github.com/Chowdhury-DSP/ChowKick)
+- `chowmatrix` — [Chowdhury-DSP/ChowMatrix](https://github.com/Chowdhury-DSP/ChowMatrix)
+- `chowmultitool` — [Chowdhury-DSP/ChowMultiTool](https://github.com/Chowdhury-DSP/ChowMultiTool)
 
-Docker or Podman, GCC 8 Image(check its avaliable in registry).
-
-## Build
-
-Just run 
 ```sh
-chmod +x build.sh
-./build.sh
+make all          # build everything
+make helm         # build helm
+make gearmulator  # build gearmulator
+make clean        # clear /out
 ```
 
+Output goes to `out/<synth>/`.

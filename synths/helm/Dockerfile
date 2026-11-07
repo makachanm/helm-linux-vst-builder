@@ -7,4 +7,6 @@ RUN sed -i 's|deb.debian.org|archive.debian.org|g; s|security.debian.org|archive
       libx11-dev libxext-dev libxinerama-dev libxcursor-dev libxrandr-dev libxcomposite-dev libgl1-mesa-dev
 
 RUN git clone --depth 1 https://github.com/mtytel/helm.git /helm \
- && make -C /helm vst -j"$(nproc)"
+ && make -C /helm lv2 -j"$(nproc)"
+
+RUN mkdir -p /out && cp -r /helm/builds/linux/LV2/helm.lv2 /out/
