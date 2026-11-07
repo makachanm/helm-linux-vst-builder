@@ -11,6 +11,10 @@ RUN git clone --depth 1 https://github.com/linuxaudio/ntk.git /ntk \
 
 RUN git clone --depth 1 https://github.com/openAVproductions/openAV-Fabla.git /src
 
+# upstream crashes on patch:Get for an empty pad (REAPER does this on load)
+COPY empty-pad-crash.patch /
+RUN patch -d /src -p1 < /empty-pad-crash.patch
+
 RUN cd /src && PKG_CONFIG_PATH=/src cmake -S . -B /build -DCMAKE_INSTALL_PREFIX=/prefix \
  && cmake --build /build -j"$(nproc)" && cmake --install /build
 
