@@ -17,6 +17,7 @@ make gearmulator   # build gearmulator
 make chowmatrix    # build chowmatrix
 make chowmultitool # build chowmultitool
 
+make install      # copy built plugins to ~/.lv2 (REAPER reads it)
 make clean        # clear out/
 ```
 
