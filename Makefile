@@ -15,9 +15,8 @@ $(SYNTHS):
 	id=$$($(ENGINE) create synth-builder-$@) && \
 	  $(ENGINE) cp $$id:/out/. out/$@/; rc=$$?; \
 	  $(ENGINE) rm $$id >/dev/null; exit $$rc
-	@echo "완료: $(CURDIR)/out/$@"
+	@echo "done: $(CURDIR)/out/$@"
 
-# REAPER scans ~/.lv2 when its LV2 path setting is empty
 install:
 	@test -d out || { echo "nothing built yet, run make first" >&2; exit 1; }
 	mkdir -p $(LV2_DIR)
