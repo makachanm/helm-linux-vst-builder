@@ -1,16 +1,17 @@
 # lv2plugin-buildscripts
 
-Build Linux LV2 plugins with Docker/Podman.
-
+Build Linux LV2 plugins with Docker/Podman. <br />
 `make` and `docker` or `podman` is required. (for GCC 8 dependency)
-
+ <br /> 
+ 
 - `helm` — [mtytel/helm](https://github.com/mtytel/helm)
 - `gearmulator` — [dsp56300/gearmulator](https://github.com/dsp56300/gearmulator)
 - `chowmatrix` — [Chowdhury-DSP/ChowMatrix](https://github.com/Chowdhury-DSP/ChowMatrix)
 - `chowmultitool` — [Chowdhury-DSP/ChowMultiTool](https://github.com/Chowdhury-DSP/ChowMultiTool)
 - `fabla` — [openAVproductions/openAV-Fabla](https://github.com/openAVproductions/openAV-Fabla)
 - `sorcer` — [openAVproductions/openAV-Sorcer](https://github.com/openAVproductions/openAV-Sorcer)
-
+ <br />
+ 
 ```sh
 make all          # build everything (if you want to build all of these)
 
