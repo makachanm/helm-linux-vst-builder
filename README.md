@@ -21,7 +21,7 @@ make chowmultitool # build chowmultitool
 make fabla         # build fabla
 make sorcer        # build sorcer
 
-make install      # copy built plugins to ~/.lv2 (REAPER reads it)
+make install      # copy built plugins to ~/.lv2
 make clean        # clear out/
 ```
 
